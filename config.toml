@@ -1,0 +1,41 @@
+theme = "ayu_evolve"
+
+[editor]
+scrolloff = 6
+shell = ["bash", "-c"]
+line-number = "relative"
+cursorline = true
+rulers = [80, 120]
+bufferline = "multiple"
+
+[editor.cursor-shape]
+insert = "bar"
+select = "underline"
+
+[editor.whitespace]
+render = "all"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = " " # Tabs will look like "→···" (depending on tab width)
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+
+[keys.normal]
+"C-`" = "switch_to_uppercase"
+
+[keys.normal."space"]
+";" = ":set lsp.display-inlay-hints true"
+":" = ":set lsp.display-inlay-hints false"
+
+[keys.normal."["]
+b = ":bp"
+
+[keys.normal."]"]
+b = ":bn"
