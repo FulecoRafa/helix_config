@@ -2,7 +2,7 @@ theme = "ayu_evolve"
 
 [editor]
 scrolloff = 6
-shell = ["bash", "-c"]
+shell = ["fish", "-c"]
 line-number = "relative"
 cursorline = true
 rulers = [80, 120]
